@@ -1,12 +1,11 @@
-import axios from "axios";
+import useAxios from "helpers/useAxios";
 
 const getUsers = async () => {
-   return await axios.get(`https://jsonplaceholder.typicode.com/todos/`)
+   return await useAxios.get(`/todos`)
 }
 
-
 const addUsers =  (params) => {
-   return axios.post("https://jsonplaceholder.typicode.com/posts",params)
+   return useAxios.post("/posts",params)
 }
 
 export { getUsers, addUsers }
