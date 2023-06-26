@@ -9,9 +9,9 @@ const RouteAuthProvider = ({ children, isProtected, path }) => {
 
     useEffect(() => {
         if (isProtected && !token) {
+            navigate("/login");
+        } else if (path === "/login" && token) {
             navigate("/");
-        } else if (path === "/" && token) {
-            navigate("/dashboard");
         }
     }, [isProtected, token])
 

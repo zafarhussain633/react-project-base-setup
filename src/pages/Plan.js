@@ -7,7 +7,7 @@ const Plan = () => {
 
     useEffect(()=>{
         setTimeout(()=>{
-            setRouteAccess({routeAcess:false, redirectTo:"/about"});
+            setRouteAccess({routeAcess:false, redirectTo:"/about"}); // want to redirect to any other page except plan
         },4000)
     },[])
 

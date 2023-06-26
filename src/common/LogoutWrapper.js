@@ -7,7 +7,7 @@ const LogoutWrapper = ({ children }) => {
 
     const logout = () => {  
         removeToken();
-        navigate("/")
+        navigate("/login")
     }
 
 

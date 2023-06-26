@@ -20,7 +20,7 @@ const Users = () => {
         await dispatch(addUser({name})).unwrap()
         // await dispatch(getUsers()).unwrap()
         setToken("jskldjfkldsjfklsdjlk")
-        navigate("/dashboard")
+        navigate("/")
         
     }
 
@@ -28,7 +28,7 @@ const Users = () => {
         <>
             <form onSubmit={handleAddUser}>
                 <input value={name} onChange={(e) => setName(e.target.value)} />
-                <button>Add user</button>
+                <button>Login</button>
             </form>
             <Loader loading={users.loading} />
         </>

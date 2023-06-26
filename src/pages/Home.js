@@ -7,8 +7,8 @@ import Users from "components/Users"
 const Home = () => {
     return (
         <div>
-            <Counter />
-            <ShowResult />
+            {/* <Counter />   // uncommmnet it to test redux toolkit
+            <ShowResult /> */}  
             <Users />
         </div>
     )

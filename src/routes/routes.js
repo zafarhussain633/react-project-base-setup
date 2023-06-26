@@ -2,7 +2,7 @@ import pages from "routes/components";
 
 const routes = [
     {
-        path: "/",
+        path: "/login",
         Component: pages.Home,
         isProtected: false,
     },
@@ -12,7 +12,7 @@ const routes = [
         isProtected: false,
     },
     {
-        path: "/dashboard",
+        path: "/",
         Component: pages.Dashboard,
         isProtected: true,
     },
