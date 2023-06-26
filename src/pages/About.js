@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import PublicLayout from "Layout/PublicLayout";
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <PublicLayout>
+      <div>About</div>
+    </PublicLayout>
+  );
+};
 
-export default About
+export default About;

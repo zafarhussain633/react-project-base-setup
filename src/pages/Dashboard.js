@@ -1,12 +1,13 @@
-import React from 'react'
-import DashboardComp  from 'components/dashboard'
+import React from "react";
+import DashboardComp from "components/dashboard";
+import ProtectedLayout from "Layout/ProtectedLayout";
 
 const Dashboard = () => {
-
   return (
-    <DashboardComp />
-  )
+    <ProtectedLayout>
+      <DashboardComp />
+    </ProtectedLayout>
+  );
+};
 
-}
-
-export default Dashboard
+export default Dashboard;
